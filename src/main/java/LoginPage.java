@@ -1,5 +1,12 @@
 import static com.codeborne.selenide.Selenide.*;
 
+/**
+ * Вместо импорта пакета Selenide.* можно было импортировать вот так:
+ * import static com.codeborne.selenide.Selenide.$x;
+ * import static com.codeborne.selenide.Selenide.sleep;
+ * Это лучше сделать, так как слишком широкие импорты однажды могут привести к проблемам (н-р, увеличение времени компиляции)
+ */
+
 public class LoginPage extends BasePage {
 
     private static final String loginLocator = ".//input[@id='field_email']";

@@ -8,6 +8,7 @@ public class MusicPage extends BasePage{
 
     public static void clickMusic() {
         $x(musicLocator).click();
+        //Понравилось использование sleep, это снижает кол-во ошибок теста, если страницы долго грузятся.
         sleep(1000);
     }
     public static void clickMusicPlayButton() {

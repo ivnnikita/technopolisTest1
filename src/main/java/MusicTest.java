@@ -14,6 +14,7 @@ public class MusicTest extends BaseTest {
 
     @Test
     public void MusicPageTest() {
+        //вынести данные для входа в константы, чтобы не приходилось в каждом тесте снова вводить эти данные
         LoginPage.signIn("", ""); //Enter your data
         MusicPage.clickMusic();
         MusicPage.clickMusicPlayButton();
