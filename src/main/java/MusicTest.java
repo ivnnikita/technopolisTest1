@@ -5,6 +5,7 @@ import org.junit.Test;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MusicTest extends BaseTest {
+//также Before и after вынесла бы в BaseTest
 
     @Before
     public void start() {
